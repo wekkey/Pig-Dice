@@ -1,5 +1,5 @@
 Pig Dice
-A program where two users can play Pig dice against each other, 08.24.16
+A program where two users can play Pig dice against each other,
 
 By Esther Stella
 Description
