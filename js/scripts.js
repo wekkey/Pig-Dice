@@ -99,6 +99,11 @@ $(document).ready(function(){
 
       alert("Player 2's turn");
     }
+
+    $("#r1").show()
+  $("#h1").hide()
+    $("#r2").show()
+$("#h2").hide()
   });
 
   //Scope for Player 2
