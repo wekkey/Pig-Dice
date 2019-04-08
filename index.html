@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" type="image/jpg" href="img/favicon.jpg">
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script  src="https://code.jquery.com/jquery-3.3.1.js" ></script>
+    <script src= "js/scripts.js"></script>
+
+    <title>PIG-DICE-GAME</title>
+  </head>
+  <body>
+    <div class="hp">
+  <marquee scrollamount="10"
+direction="left"
+behavior="scroll">
+LETS EXPLORE PIG DICE GAME TOGETHER...
+<img src="images/pgr.gif" />
+</marquee>
+</div>
+    <div class="container">
+      <div class="text-center">
+
+        <div class="receive">
+        <br><br><br><br><br><br><br><br><br><br>
+
+
+          <div class="well well-sm">
+          <form id="details" >
+            <br>
+            <div class="form-group form-group-lg ">
+              <label for="player1">Player 1:</label>
+              <input type="text" class="form-control input-lg text-center" id="player1name">
+            </div>
+            <div class="form-group form-group-lg ">
+              <label for="player2">Player 2:</label>
+              <input type="text" class="form-control input-lg text-center" id="player2name">
+            </div>
+            <button type="submit"class="btn btn-primary btn-lg">Start Game</button>
+            <a href="index.html" class="btn btn-success btn-lg" >Exit</a>
+          </form>
+          <br>
+        </div>
+
+      </div>
+
+        <div id="show">
+
+        <div class="jumbotron">
+        <h1>PIG-DICE</h1>
+        <h2>Variation: PIG DICE GAME</h1>
+          <a href="index.html" class="btn btn-success btn-lg" >Exit</a>
+        </div>
+
+          <div class="row">
+            <div id="player1">
+              <div class= "col-md-6">
+                <div class="well" id="well1">
+                <h3 id="Player1"></h3>
+                <p>Total Score: <br><span id="total1"></span> </p>
+                <p>Acquired Score: <br><span id="acquired1"></span></p>
+                <p>Dice Value 1: <br><span id="dice1"></span></p>
+                <p>Dice Value 2: <br><span id="dice2"></span></p>
+                <button type:"submit" id="r1" class="btn btn-danger btn-lg">Roll</button>
+                <button type:"submit" id="h1" class="btn btn-primary btn-lg">Hold</button>
+              </div>
+            </div>
+            </div>
+
+            <div id="player2">
+              <div class="col-md-6">
+                <div class="well" id="well2">
+                <h3 id="Player2"></h3>
+                <p>Total score:<br> <span id="total2"> </span></p>
+                <p>Acquired score: <br><span id="acquired2"></span></p>
+                <p>Dice Value 1: <br><span id="die1"></span></p>
+                <p>Dice Value 2: <br><span id="die2"></span></p>
+
+
+
+                <button type="submit" id="r2" class="btn btn-danger btn-lg" >Roll</button>
+                <button type="submit" id="h2" class="btn btn-primary btn-lg">Hold</button>
+              </div>
+            </div>
+            </div>
+
+          </div>
+      </div>
+    </div>
+  </div>
+
+
+  </body>
+</html>
