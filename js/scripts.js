@@ -24,6 +24,10 @@ $(document).ready(function(){
     $("#Player2").text(newGamer.player2);
 
   });
+  $("#r1").show()
+$("#h1").show()
+  $("#r2").show()
+$("#h2").show()
   //Scope for Player 1
   var acquired1 = 0;
   var total1 = 0;
@@ -36,7 +40,7 @@ $(document).ready(function(){
     dice1 =dice.roll();
     dice2 =dice.roll();
 
-    if(dice1===1 && dice2===1){
+    if((dice1===1) && (dice2===1)){
       total1 = 25;
       dice1 = 0;
       dice2= 0;
@@ -50,7 +54,7 @@ $(document).ready(function(){
       alert("You rolled two 1s,you've received 25 points to your total");
       $("#total1").text(total1);
     }
-    if(dice1===1 || dice2===1){
+    if((dice1===1) || (dice2===1)){
       dice1 = 0;
       dice2 = 0;
       acquired1 = 0;
@@ -62,7 +66,7 @@ $(document).ready(function(){
       alert("You rolled a 1,game moves to player 2");
 
     }
-    if(dice1 === dice2 && dice1!==1 && dice1>0){
+    if((dice1 === dice2) && (dice1!==1 && dice1>0)){
       acquired1 += ((dice1+dice2)*2);
       total1 += acquired1;
       $("#total1").text(total1);
@@ -100,10 +104,8 @@ $(document).ready(function(){
       alert("Player 2's turn");
     }
 
-    $("#r1").show()
-  $("#h1").hide()
-    $("#r2").show()
-$("#h2").hide()
+
+
   });
 
   //Scope for Player 2

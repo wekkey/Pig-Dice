@@ -60,7 +60,7 @@ h1{
     font-size: 30px;
 }
 
-button {
+/* button {
     position: absolute;
     width: 200px;
     left: 50%;
@@ -74,7 +74,8 @@ button {
     cursor: pointer;
     font-weight: 300;
     transition: background-color 0.3s, color 0.3s;
-}
+} */
+
 
 button:hover { font-weight: 600; }
 button:hover i { margin-right: 20px; }
